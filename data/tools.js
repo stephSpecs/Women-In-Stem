@@ -98,7 +98,7 @@ const women = [
     contribution: 'Developed the mathematical models that became the foundation of GPS',
     description: 'Gladys West was a mathematician who worked at the US Naval Weapons Laboratory, where she programmed computers to deliver increasingly precise calculations of the Earth\'s shape. Her geodetic models became the foundation of the Global Positioning System (GPS).',
     fun_fact: 'Her contribution to GPS went largely unrecognized for decades — she was only inducted into the Air Force Space and Missile Pioneers Hall of Fame in 2018.',
-    image: 'https://en.wikipedia.org/w/index.php?title=Special:Redirect/file/Gladys_West.jpg&width=300'
+    image: 'https://static01.nyt.com/images/2026/01/29/obituaries/00west-topper-img-print3/00west-topper-img-master675.jpg&width=300'
   }
 ];
 
