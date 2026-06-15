@@ -1,8 +1,8 @@
-# WEB103 Project 1 - *Women Who Shaped Stem*
+# WEB103 Project 2 - *Women Who Shaped STEM*
 
 Submitted by: **Stephanie B**
 
-About this web app: **Women Who Shaped STEM is a web app that highlights ten women who made important contributions to science, technology, engineering, and mathematics. The homepage displays all ten women as clickable cards, and each card links to a detail page with a fuller bio and fun fact. It was built using Node.js and Express for the backend, with vanilla HTML, CSS, and PicoCSS for styling.**
+About this web app: ** Women Who Shaped STEM is a web app that highlights ten women who made important contributions to science, technology, engineering, and mathematics. The homepage displays all ten women as clickable cards, and each card links to a detail page with a fuller bio and fun fact. It was built using Node.js, Express, and PostgreSQL for the backend, with vanilla HTML, CSS, and PicoCSS for styling.**
 
 Time spent: **2** hours
 
@@ -12,17 +12,14 @@ The following **required** functionality is completed:
 
 <!-- Make sure to check off completed functionality below -->
 - [x] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
-- [x] **The web app displays a title**
-- [x] **The web app displays at least five unique list items, each with at least three displayed attributes (such as title, text, and image)**
-- [x] **The user can click on each item in the list to see a detailed view of it, including all database fields**
-  - [x] **Each detail view should be a unique endpoint, such as as `localhost:3000/bosses/crystalguardian` and `localhost:3000/mantislords`**
-  - [x] *Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation* 
-- [x] **The web app serves an appropriate 404 page when no matching route is defined**
-- [x] **The web app is styled using Picocss**
+- [x] **The web app is connected to a PostgreSQL database, with an appropriately structured database table for the list items**
+  - [x] **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
+  - [x]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
+
 
 The following **optional** features are implemented:
 
-- [x] The web app displays items in a unique format, such as cards rather than lists or animated list items
+- [ ] The user can search for items by a specific attribute
 
 The following **additional** features are implemented:
 
@@ -30,17 +27,18 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-<img src= womenInStem1.gif />
+Here's a walkthrough of implemented required features:
+
+<img src= womenInStemRender.gif />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  Add GIF tool here
-[ScreenToGif](https://www.screentogif.com/) for Windows
+GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
+
 
 ## Notes
 
 Describe any challenges encountered while building the app or any additional context you'd like to add.
-One of the biggest challenges was getting the images to load since the Wikimedia URLs kept breaking and I had to find the correct filenames for each one. I also ran into some issues early on with Windows terminal commands being different from Mac, and figuring out how Express handles static files versus HTML routes took some trial and error. Overall it was a good intro to working with a backend without relying on React.
-
+One thing I struggled with was keeping my data consistent across different files. I had fixed some broken image URLs in my HTML earlier, but the database (which was from a separate data file) still had the old URLs, so a bunch of images broke again once I switched to fetching from the database. I also ran into some git issues with mismatched branch names and a folder being tracked when it shouldn't have been.
 
 ## License
 
